@@ -32,6 +32,8 @@ titles_and_numbers = list(soup.find_all("td"))
 # get just the item numbers markers
 item_list = list(soup.find_all("td", class_="numberspace"))
 
+# using "start" and "end to get agenda number and title together
+# starting at 2 to bypass title
 start = 2
 end = 4
 count = 0
